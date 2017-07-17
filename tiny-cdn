@@ -614,7 +614,7 @@ function tinyCDN(options) {
 }
 
 // exported or run as cli
-if (module.parent) {
+if (module.exports) {
   tinyCDN.Converger = Converger;
   (module.exports = tinyCDN).create = tinyCDN;
 } else {
